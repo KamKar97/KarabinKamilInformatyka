@@ -1,0 +1,12 @@
+lista = [1,4,7,3,9]
+
+n = len(lista)
+
+while n > 1:
+    for l in range(0, n-1):
+        if lista[1] > lista[l+1]:
+            lista[l], lista[l+1] = lista[l+1], lista[l]
+            
+    n -= 1
+
+print(lista)
